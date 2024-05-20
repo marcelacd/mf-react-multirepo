@@ -1,22 +1,22 @@
 import React from 'react'
-import Swal from "sweetalert2"
+// import Swal from "sweetalert2"
 
-const ColorList = ({ colorsList = [], handleSubmitClearColors, obj }) => {
+const ColorList = ({ colorsList = [], handleSubmitClearColors }) => {
 
     // throw new Error('Error en el componente ColorList');
 
-    const handleCopyColor = (color) => {
-        navigator.clipboard.writeText(color)
+    // const handleCopyColor = (color) => {
+    //     navigator.clipboard.writeText(color)
 
-        Swal.fire({
-            position: "top-end",
-            icon: "success",
-            title: `Color: ${color} Copied`,
-            showConfirmButton: false,
-            timer: 1200,
-            timerProgressBar: true
-        })
-    }
+    //     Swal.fire({
+    //         position: "top-end",
+    //         icon: "success",
+    //         title: `Color: ${color} Copied`,
+    //         showConfirmButton: false,
+    //         timer: 1200,
+    //         timerProgressBar: true
+    //     })
+    // }
 
     return (
         <div className='border-dashed border-2 border-green-500 p-2'>
@@ -40,7 +40,6 @@ const ColorList = ({ colorsList = [], handleSubmitClearColors, obj }) => {
                                         background: color,
                                         fontWeight: "bolder"
                                     }}
-                                    onClick={() => handleCopyColor(color)}
                                 >
                                     {color}
                                 </button>

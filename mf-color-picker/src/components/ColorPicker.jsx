@@ -2,6 +2,8 @@ import React from 'react'
 
 const ColorPicker = ({color, handleChangesColor, handleSubmitSaveColor}) => {
 
+  // throw new Error('Error en el componente ColorList');
+
   return (
     <>
     <div className='border-dashed border-2 border-yellow-600 p-2'>

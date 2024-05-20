@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 
 import "./index.scss";
+
 import ColorPicker from "./components/ColorPicker";
 import { useColors } from "./hooks/useColors";
 
@@ -17,4 +18,5 @@ const App = () => {
     />
   )
 };
+
 ReactDOM.createRoot(document.getElementById("app")).render(<App />);

@@ -8,30 +8,44 @@ services:
       - "8080:8080"
     links:
       - mf_navbar
-      - mf_counter
       - mf_cards
       - mf_detalle_personaje
+      - mf_color-picker
+      - mf_color-list
+      - mf_counter
   mf_navbar:
     build:
       context: mf-navbar
       dockerfile: ./Dockerfile
     ports:
       - "8081:8081"
-  mf_counter:
-    build:
-      context: mf-counter
-      dockerfile: ./Dockerfile
-    ports:
-      - "8082:8082"
   mf_cards:
     build:
       context: mf-cards
       dockerfile: ./Dockerfile
     ports:
-      - "8083:8083"
+      - "8082:8082"
   mf_detalle_personaje:
     build:
       context: mf-detalle-personaje
       dockerfile: ./Dockerfile
     ports:
+      - "8083:8083"
+  mf_color-picker:
+    build:
+      context: mf_color-picker
+      dockerfile: ./Dockerfile
+    ports:
       - "8084:8084"
+  mf_color-list:
+    build:
+      context: mf_color-list
+      dockerfile: ./Dockerfile
+    ports:
+      - "8085:8085"  
+  mf_counter:
+    build:
+      context: mf-counter
+      dockerfile: ./Dockerfile
+    ports:
+      - "8087:8087"

@@ -2,11 +2,12 @@ import React from "react";
 
 import { Error } from "../components/Error";
 
+import Counter from "mf_counter/Counter";
+
 import ColorPicker from "mf_colorPicker/ColorPicker";
 import ColorList from "mf_colorList/ColorList";
-
-import { useColors } from "mf_colorPicker/useColors"; //Importando la funcion compartida
-// import Counter from "mf_counter/Counter";
+import { useColors } from "mf_colorPicker/useColors"; 
+//Importando la funcion compartida
 
 
 const HomePage = () => {
@@ -36,13 +37,13 @@ const HomePage = () => {
           </Error>
         </div>
       </div>
+      {/* <div className="text-center">
+        <h1 className="font-bold text-lg mb-5">Counter MF</h1>
+        <Error>
+          <Counter />
+        </Error>
+      </div> */}
     </>
-    // <div className="text-center">
-    //   <h1 className="font-bold text-lg mb-5">Counter MF</h1>
-    //   <Error>
-    //     <Counter />
-    //   </Error>
-    // </div>
   )
 };
 

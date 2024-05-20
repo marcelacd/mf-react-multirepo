@@ -10,4 +10,5 @@ const App = () => {
     <ColorList colorsList={["#8cf3be", "#8ce7f3"]}/>
     </>
 };
+
 ReactDOM.createRoot(document.getElementById("app")).render(<App />);

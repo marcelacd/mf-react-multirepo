@@ -49,7 +49,7 @@ module.exports = {
         mf_detalle_personaje: "mf_detalle_personaje@http://localhost:8083/remoteEntry.js",
         mf_colorPicker: "mf_colorpicker@http://localhost:8084/remoteEntry.js",
         mf_colorList: "mf_colorlist@http://localhost:8085/remoteEntry.js",
-        mf_counter: "mf_counter@http://localhost:8087/remoteEntry.js",
+        mf_counter: "mf_counter@http://localhost:8086/remoteEntry.js",
       },
       exposes: {},
       shared: {

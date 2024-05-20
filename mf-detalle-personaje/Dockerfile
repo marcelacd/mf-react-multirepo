@@ -15,4 +15,4 @@ RUN yarn build
 RUN npm i -g http-server
 
 EXPOSE 8084
-CMD [ "http-server", "dist", "-p", "8084"]
+CMD [ "http-server", "dist", "-p", "8083"]
