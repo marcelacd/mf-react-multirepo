@@ -33,13 +33,13 @@ services:
       - "8083:8083"
   mf_color-picker:
     build:
-      context: mf_color-picker
+      context: mf-color-picker
       dockerfile: ./Dockerfile
     ports:
       - "8084:8084"
   mf_color-list:
     build:
-      context: mf_color-list
+      context: mf-color-list
       dockerfile: ./Dockerfile
     ports:
       - "8085:8085"  
@@ -48,4 +48,4 @@ services:
       context: mf-counter
       dockerfile: ./Dockerfile
     ports:
-      - "8087:8087"
+      - "8086:8086"

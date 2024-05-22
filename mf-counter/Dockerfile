@@ -6,13 +6,13 @@ WORKDIR /app
 
 COPY ./package.json .
 
-RUN yarn install
+RUN npm install
 
 COPY ./ .
 
-RUN yarn build
+RUN npm run build
 
 RUN npm i -g http-server
 
 EXPOSE 8082
-CMD [ "http-server", "dist", "-p", "8087" ]
+CMD [ "http-server", "dist", "-p", "8086" ]
