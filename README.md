@@ -14,7 +14,7 @@ exposes: {
       }
 ```
 
-2. Consumir mf en el host en el archivo webpack.conf
+3. Consumir mf en el host en el archivo webpack.conf
 ```javascript
 remotes: {
         prueba: "prueba@http://localhost:4001/remoteEntry.js"
